@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: agent-calendar-orchestration-poc
+Version: 1.0.0
+Summary: Policy-driven AI orchestration PoC with Google Calendar partner integration, self-diagnostics, simulation mode, and regression tests.
+Requires-Python: >=3.10
+Requires-Dist: google-api-python-client>=2.130.0
+Requires-Dist: google-auth>=2.29.0
+Requires-Dist: google-auth-oauthlib>=1.2.0
+Requires-Dist: pydantic>=2.7.0
+Requires-Dist: pydantic-settings>=2.3.0
+Requires-Dist: tenacity>=8.3.0
+Requires-Dist: structlog>=24.1.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: rich>=13.7.1
+Requires-Dist: python-dateutil>=2.9.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.2.0; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"

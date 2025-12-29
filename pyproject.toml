@@ -1,0 +1,23 @@
+[project]
+name = "agent-calendar-orchestration-poc"
+version = "1.0.0"
+description = "Policy-driven AI orchestration PoC with Google Calendar partner integration, self-diagnostics, simulation mode, and regression tests."
+requires-python = ">=3.10"
+dependencies = [
+  "google-api-python-client>=2.130.0",
+  "google-auth>=2.29.0",
+  "google-auth-oauthlib>=1.2.0",
+  "pydantic>=2.7.0",
+  "pydantic-settings>=2.3.0",
+  "tenacity>=8.3.0",
+  "structlog>=24.1.0",
+  "python-dotenv>=1.0.1",
+  "rich>=13.7.1",
+  "python-dateutil>=2.9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2.0", "ruff>=0.5.0"]
+
+[tool.ruff]
+line-length = 100
