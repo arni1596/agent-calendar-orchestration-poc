@@ -8,8 +8,8 @@ from typing import Any, Dict, List
 @dataclass
 class MockCalendarClient:
     """
-    Mock partner calendar client.
-    Returns deterministic "busy blocks" as Google-like event items with start/end dateTime.
+    Deterministic mock calendar client.
+    Returns repeatable busy blocks as Google-like event items with start/end dateTime.
     """
 
     timezone: str = "America/Chicago"
@@ -22,7 +22,7 @@ class MockCalendarClient:
         day = start
 
         # Deterministic busy blocks:
-        # - Busy 10:00–10:30 and 15:00–15:45 each day in the window (if within range)
+        # - Busy 10:00-10:30 and 15:00-15:45 each day in the window (if within range)
         while day < end:
             s1 = day.replace(hour=10, minute=0, second=0, microsecond=0)
             e1 = s1 + timedelta(minutes=30)

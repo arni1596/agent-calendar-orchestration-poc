@@ -1,7 +1,7 @@
 [project]
 name = "agent-calendar-orchestration-poc"
 version = "1.0.0"
-description = "Policy-driven AI orchestration PoC with Google Calendar partner integration, self-diagnostics, simulation mode, and regression tests."
+description = "Calendar scheduling orchestration PoC with policy rules, dry-run simulation, diagnostics, and regression tests."
 requires-python = ">=3.10"
 dependencies = [
   "google-api-python-client>=2.130.0",

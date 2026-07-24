@@ -18,7 +18,7 @@ log = structlog.get_logger()
 
 def run_simulation(goal: str, dry_run: bool = True) -> Dict[str, Any]:
     """
-    Runs the engine against a mocked partner calendar.
+    Runs the engine against a deterministic mock calendar adapter.
     Produces regression-friendly trace artifacts.
     """
     request_id = f"sim_{uuid.uuid4()}"

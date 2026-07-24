@@ -6,8 +6,8 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class SchedulingPolicy:
     """
-    Policy is separate from execution on purpose.
-    This is how you keep orchestration deterministic and explainable.
+    Scheduling rules are kept separate from execution so the engine can make
+    repeatable, explainable decisions.
     """
     timezone: str
     work_start_hour: int

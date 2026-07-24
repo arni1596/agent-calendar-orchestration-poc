@@ -24,7 +24,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="agent-calendar-orchestration-poc")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    sim_p = sub.add_parser("simulate", help="Run orchestration against a mocked partner calendar (no credentials)")
+    sim_p = sub.add_parser(
+        "simulate",
+        help="Run orchestration against a deterministic mock calendar adapter (no credentials)",
+    )
     sim_p.add_argument("--dry-run", action="store_true", help="Preview decisions without creating an event")
     sim_p.add_argument(
         "--goal",
